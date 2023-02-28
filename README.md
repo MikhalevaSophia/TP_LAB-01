@@ -62,6 +62,9 @@ $ find -name "any.hpp"
 ./boost/type_erasure/any.hpp
 ./boost/spirit/home/support/algorithm/any.hpp
 ```
+![2023-02-28_19-24-35](https://user-images.githubusercontent.com/112760887/221965355-02609cbe-d863-41fc-b709-c97b5cd04205.png)
+
+
 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`.
 
 > **grep** — пробегается по содержанию каждого файла в директории и выводит строки, содержащие данный на вход фрагмент
@@ -73,6 +76,9 @@ $ find -name "any.hpp"
 ```sh
 $ grep -lr "boost::asio"
 ```
+![2023-02-28_19-24-50](https://user-images.githubusercontent.com/112760887/221965414-a2d18888-383d-4b88-967f-712fb958f39b.png)
+
+
 8. Скомпилирутйе *boost*. Можно воспользоваться [инструкцией](https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html#or-build-custom-binaries) или [ссылкой](https://codeyarns.com/2017/01/24/how-to-build-boost-on-linux/).
 
 
@@ -104,6 +110,8 @@ $ cp `find -name "*.a"` ~/boost-libs
 $ cd ~/boost-libs
 $ find ! -type d -exec du -h {} +
 ```
+![2023-02-28_19-28-10](https://user-images.githubusercontent.com/112760887/221965490-7015d2ed-ea13-4c9a-8bdc-c033f32ec675.png)
+
 11. Найдите *топ10* самых "тяжёлых".
 
 > **sort** — сортирует строки
@@ -119,3 +127,5 @@ $ find ! -type d -exec du -h {} +
 ```sh
 $ find ! -type d -exec du {} + | sort -rn | head -n 10
 ```
+![2023-02-28_19-28-39](https://user-images.githubusercontent.com/112760887/221965551-c4f1bc25-d374-4ba9-a2a4-146eb9e8d350.png)
+
