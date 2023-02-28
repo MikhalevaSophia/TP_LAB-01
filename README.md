@@ -2,8 +2,6 @@
 ```sh
 $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
-[[![2023-02-28_19-24-10](https://user-images.githubusercontent.com/112760887/221917101-5cd37433-6cb9-4bf7-b35c-9a966448ddaa.png)
-]]
 2. Разархивируйте скаченный файл в директорию `~/boost_1_69_0`
 ```sh
 $ tar -xf boost_1_69_0.tar.gz -C ~
@@ -28,6 +26,9 @@ $ cd ~/boost_1_69_0
 ```sh
 $ find -maxdepth 1 ! -type d  | wc
 ```
+
+![2023-02-28_19-24-10](https://user-images.githubusercontent.com/112760887/221931684-566ac3d9-e60f-48f8-9a54-0337b4b54d49.png)
+
 4. Подсчитайте количество файлов в директории `~/boost_1_69_0` **включая** вложенные директории.
 
 > Без флага `-maxdepth` команда `find` пробегает по вообще всем файлам, включая те, что находятся во вложенных директориях.
