@@ -2,6 +2,8 @@
 ```sh
 $ wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
+[[![2023-02-28_19-24-10](https://user-images.githubusercontent.com/112760887/221917101-5cd37433-6cb9-4bf7-b35c-9a966448ddaa.png)
+]]
 2. Разархивируйте скаченный файл в директорию `~/boost_1_69_0`
 ```sh
 $ tar -xf boost_1_69_0.tar.gz -C ~
